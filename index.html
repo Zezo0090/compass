@@ -908,16 +908,15 @@
                         <div class="tagline">المساعد الذكي المتقدم</div>
                     </div>
                 </div>
-                <div class="logo-container" onclick="document.getElementById('logoInput').click()">
+                <div class="logo-container">
                     <div class="logo">
-                        <img id="logoImage" class="logo-image" alt="شعار الجامعة">
-                        <div class="logo-placeholder" id="logoPlaceholder">
-                            <i class="fas fa-university"></i>
-                            <span>إضافة الشعار</span>
-                        </div>
+                        <img src="png-clipart-king-abdulaziz-university-dar-al-hekma-university-king-saud-university-education-saudi-gazette-label-logo.png" 
+                         alt="شعار جامعة الملك عبدالعزيز" 
+                         class="logo-image" 
+                         style="display: block; width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
                     </div>
-                    <input type="file" id="logoInput" class="logo-input" accept="image/*">
                 </div>
+
             </div>
         </header>
 
@@ -996,9 +995,10 @@
                 
                 <div class="input-container">
                     <input type="text" class="message-input" id="messageInput" placeholder="اكتب رسالتك هنا...">
-                    <button class="send-button" id="sendButton">
+                    <button type="button" class="send-button" id="sendButton" onclick="sendMessage()">
                         <i class="fas fa-paper-plane"></i>
                     </button>
+
                 </div>
             </div>
         </div>
